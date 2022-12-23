@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis</title>
+</head>
+<body>
+    <h1>Treinando variáveis</h1>
+    <h2>Utilização do sinal de +</h2>
+    <ul>
+        <li>(number + number) adição</li>
+        <li>(string + string) concatenação</li>
+    </ul>
+    <h2>Comandos em JS</h2>
+    <p>O comando <strong>prompt</strong> sempre retornará uma string mesmo que digite um número. Portanto não conseguimos fazer somas com os dados que recebemos desse comando.</p>
+    <p>Para convertemos uma string para number utilizamos o comando <strong>Number.parseInt('n')</strong> para números inteiros e para números com pontos ou virgulas utilizamos o <strong>Number.parseFloat('n').</strong>. Também existe o comando simplificado somente utilizando o <strong>Number('n')</strong>, porem nesse comando não definimos se ele é inteiro ou real. Veja o script abaixo:</p>
+    <code>
+        <pre>
+            var n1 = Number.parseInt(window.prompt('Digite um número: '))
+            var n2 = Number.parseFloat(window.prompt('Digite outro número: '))
+            var n3 = Number(window.prompt('Digite outro número: '))
+            var soma = n1 + n2 + n3
+            window.alert('A soma dois números é, ' + soma)
+        </pre>
+    </code>
+    <p>Exitem dois comandos caso eu queira converter um number ou qualquer outro tipo primitivo em uma string e são eles o <strong>String('n')</strong> e o <strong>n.toString().</strong>Veja o script abaixo:</p>
+    <code>
+        <pre>
+            window.alert('A soma dois números é, ' + soma.toString())
+            ou
+            window.alert('A soma dois números é, ' + String(soma))
+        </pre>
+    </code>
+    <h2>Template String</h2>
+    <p>O template string é uma forma mais simples de de escrevermos a nossa variável na tela. Com ela utilizamos a crase em vez das aspas simples e o símbolo do cifrão juntamente com chaves. Veja o exemplo: </p>
+    <code>        
+        <pre>
+            `A soma de <strong>${n1}</strong> e <strong>${n2}</strong> é igual a <strong>${soma}</strong>.`
+        </pre>
+    </code>
+    <h2>Formatação de string</h2>
+    <p>
+        <ul>
+            <li>nome da variável.<strong>length</strong>: quantos caracteres tem a string</li>
+            <li>nome da variável.<strong>toUpperCase()</strong>: tudo para MAIÚSCULO</li>
+            <li>nome da variável.<strong>toLowerCase()</strong>: tudo para minúsculo</li>
+        </ul>
+    </p>
+    <h2>Formatação de Number</h2>
+    <p>Com o .toFixed() conseguimos definir quantas casas após a virgula ou ponto queremos. Já com o .replace('' , '') conseguimos trocar uma coisa por outra. Veja: </p>
+    <code>
+        <pre>
+            var n1 = 15.6
+            n1.toFixed(2).replace('.', ',')
+            '15,60'
+        </pre>
+    </code>
+    </code>
+    <script>
+       var n1 = Number(window.prompt('Digite um número: ')) // O prompt retorna uma string mesmo que digite um número
+       var n2 = Number(window.prompt('Digite outro número: ')) 
+       var soma = n1 +  n2 // O sinal de + está fazendo a função de adição
+       window.alert(`A soma de ${n1} mais ${n2} é igual a ${soma}`)
+       // O sinal de + está fazendo a função de concatenação
+    </script>
+</body>
+</html>
