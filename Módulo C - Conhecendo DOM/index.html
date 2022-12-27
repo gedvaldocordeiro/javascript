@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução a DOM</title>
+    <style>
+        body{
+            background-color: rgb(68, 125, 199);
+            color: white;
+            font: normal 18px arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado.</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique aqui!</div>
+    <h2>Selecionando elementos no JavaScript</h2>
+    <ol>
+        <li>Marca(tag)</li>
+            <ul type="none">
+                <li>Ex.: getElementsByTagName('p')[0]</li>
+            </ul>
+        <li>ID</li>
+            <ul type="none">
+                <li>Ex.: window.document.getElementById('msg')</li>
+            </ul>
+        <li>Nome</li>
+            <ul type="none">
+                <li>Ex.: window.document.getElementsByName('msg')[0]</li>
+            </ul>
+        <li>Classe</li>
+            <ul type="none">
+                <li>Ex.: window.document.getElementsByClassName('msg')[0]</li>
+            </ul>
+        <li>Seletor</li>
+            <ul type="none">
+                <li>Ex.: window.document.querySelector('div#msg')</li>
+            </ul>
+    </ol>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        document.write(p1.innerText)
+        var d = window.document.querySelector('div#msg')
+        d.innerText = 'Estou aguardando'
+    </script>
+</body>
+</html>
