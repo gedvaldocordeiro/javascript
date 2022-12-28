@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições Simples</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            background-color: #A3CCAB;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        main{
+            background-color: #053D38;
+            color: rgb(247, 239, 239);
+            font-family: 'Open Sans', sans-serif;
+            max-width: 500px;
+            width: 70%;
+            padding: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.527);
+            border-radius: 5px;
+            height: 200px;
+        }
+
+        main > h1{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        main > p {
+            padding: 10px;
+            font-size: 1.2em;
+        }
+
+        main > input#vel{
+            outline: 0px;
+            width: 50%;
+            height: 20px;
+            text-align: right;
+            transition: 1s;
+        }
+
+        main > input#enviar{
+            outline: 0px;
+            width: 45%;
+            height: 24px;
+            transition: 1s;
+        }
+
+        main > input:hover{
+            border: 1px solid #A3CCAB;
+        }
+
+        div#res{
+            margin-top: 20px;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Sistema de multas</h1>
+        <p>Informe a velocidade de seu veículo:</p>
+        <input type="number" name="vel" id="vel" placeholder="Km/h" required minlength="2">
+        <input type="submit" value="Enviar" id="enviar" onclick="enviar()">
+        <div id="res"></div>
+        <script>
+            function enviar() {
+                var vel1 = window.document.querySelector('input#vel')
+                var v1 = Number(vel.value)
+                if(v1 > 60){
+                    res.innerHTML = `Você ultrapassou a velocidade permitida. MULTADO!`
+                } else {
+                    res.innerHTML = `Você está dentro da velocidade permitida. Dirija com segurança.`
+                }
+            }
+        
+        </script>
+    </main>
+</body>
+</html>
