@@ -2,13 +2,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+
+:root{
+    --cor1: #F28DB2;
+    --cor2: #89b2d9;
+    --cor3: white;
+}
+
 *{
     margin: 0px;
     padding: 0px;
 }
 
 body{
-    background-color: #89C2D9;
+    background-color: var(--cor2);
     font-family: 'Open Sans', sans-serif;
     width: 100vw;
     height: 100vh;
@@ -17,15 +24,14 @@ body{
 header{
     width: 100vw;
     height: 15vh;
-    background-color: #F2C9E0;
 }
 
 header > h1 {
     text-align: center;
-    color: #070707;
+    color: var(--cor3);
     font-size: 2em;
-    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.692);
-    padding-top: 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.61);
+    padding-top: 40px;
 }
 
 main{
@@ -37,18 +43,21 @@ main > section#corpo{
     background-color: white;
     border-radius: 8px;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.411);
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 480px;
-    height: 400px;
-    transform: translate(-50%, -50%);
+    margin: auto;
+    width: 500px;
+}
+
+p{
+    padding: 10px;
+}
+
+div#msg > p{
+    text-align: center;
 }
 
 footer{
     width: 100vw;
     height: 15vh;
-    background-color: #F28DB2;
 }
 
 footer > p{

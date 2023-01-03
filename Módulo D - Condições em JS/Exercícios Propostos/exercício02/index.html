@@ -9,16 +9,35 @@
 </head>
 <body>
     <header>
-        <h1>Título</h1>
+        <h1>Calculador de idade</h1>
     </header>
     <main>
         <section id="corpo">
-            <div class="assunto"></div>
-            <div class="assunto"></div>
+            <div id="form">
+                <form method="post">
+                    <p>
+                        <label for="nasc">Ano de nascimento: </label>
+                        <input type="number" name="nasc" id="nasc" required placeholder="ano de nascimento" min="1910" max="2023">
+                    </p>
+                    <p>
+                        Sexo:  
+                        <input type="radio" name="sexo" id="mas" checked>
+                        <label for="mas">Masculino</label>
+                        <input type="radio" name="sexo" id="fem">
+                        <label for="fem">Feminino</label>
+                    </p>
+                    <p>
+                        <input type="button" value="Calcular" onclick="calcidade()">
+                    </p>
+                </form>
+            </div>
+            <div id="msg">
+                <p>Preencha os dados acima para verificar o resultado!</p>
+            </div>
         </section>
     </main>
     <footer>
-        <p><a href="https://github.com/gedvaldocordeiro" target="_blank"><img src="icons8-github-24.png" alt="icon-github">gedvaldocordeiro</a></p>
+        <p><a href="https://github.com/gedvaldocordeiro" target="_blank"><img src="imagens/icons8-github-24.png" alt="icon-github">gedvaldocordeiro</a></p>
     </footer>
     <script src="script.js"></script>
 </body>
