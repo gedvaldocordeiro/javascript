@@ -5,7 +5,7 @@ function calcidade() {
     var idade = Number(atual) - Number(nasc.value)
     var msg = window.document.querySelector('div#msg')
 
-    if (nasc.value < 1900 || nasc.value > atual){
+    if (nasc.value <= 1919 || nasc.value > atual){
         window.alert('Ano de nascimento inválido!')
     } else {
         //Foto
