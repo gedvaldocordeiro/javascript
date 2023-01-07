@@ -14,24 +14,20 @@
     <main>
         <section id="corpo">
             <div id="d1">
-                <form method="post">
-                    <p>
-                        <label for="inicio">Inicio: </label>
-                        <input type="number" name="inicio" id="inicio" required>
+                    <p>Inicio: 
+                        <input type="number" name="inicio" id="txti" required>
+                    </p>
+                    <p>Fim: 
+                        <input type="number" name="fim" id="txtf" required>
+                    </p>
+                    <p>Passo: 
+                        <input type="number" name="passo" id="txtp" required>
                     </p>
                     <p>
-                        <label for="fim">Fim: </label>
-                        <input type="number" name="fim" id="fim" required>
+                        <input type="button" value="Contar" onclick="contar()">
                     </p>
-                    <p>
-                        <label for="passo">Passo: </label>
-                        <input type="number" name="passo" id="passo" required>
-                    </p>
-                    <p><input type="button" value="Contar" onclick="contar()"></p>
-                </form>
-                <p>Contando...</p>
             </div>
-            <div id="d2"></div>
+            <div id="d2">Contando...</div>
         </section>
     </main>
     <footer>
