@@ -2,7 +2,75 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+:root{
+    --fot01: 'Open Sans', sans-serif;
+    --cor01: rgb(238, 230, 230);
+    --cor02: #0071a1;
+    --cor03: #B3ECF2;
+    --cor04: #F277A4;
+}
+
 *{
     margin: 0px;
     padding: 0px;
+}
+
+body{
+    background-color: var(--cor02);
+    font-family: var(--fot01);
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    width: 100vw;
+    height: 10vh;
+}
+
+header > h1{
+    text-align: center;
+    padding: 20px;
+    font-size: 2.1em;
+    color: var(--cor01);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.459);
+}
+
+main{
+    width: 100vw;
+    height: 70vh;
+}
+
+main > section#corpo{
+    background-color: var(--cor01);
+    width: 500px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+}
+
+footer{
+    width: 100vw;
+    height: 20vh;
+}
+
+footer > p{
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+footer > p > a{
+    text-decoration: none;
+    color: #070707;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.459);
+}
+
+footer > p > a:hover{
+    text-decoration: underline;
+}
+
+footer > p > a > img{
+    position: relative;
+    top: 6px;
 }
