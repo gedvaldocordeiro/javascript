@@ -1,10 +1,20 @@
 function multiplicador(){
+    /* Converter em número mais fácil
     var tabua = parseInt(window.document.getElementById('tabua').value)
-    var d2 = window.document.getElementById('d2')
-    var resp = ''
+    */
+    let tabua = window.document.getElementById('tabua')
+    let d2 = window.document.getElementById('d2')
 
-    for(var cont = 1; cont <= 10; cont++){
-        resp = tabua * cont
-        d2.innerText = `${tabua} x ${cont} = ${resp}`
+    if(tabua.value.length == 0){
+        window.alert('Digite um número')
+    }else{
+        let vt = Number(tabua.value)
+        d2.innerHTML = `Tabuada do ${vt}. <br/> <br/>`
+
+        for(var vm = 1; vm <= 10; vm++){
+            d2.innerHTML += `${vt} x ${vm} = ${vm*vt} <br/>`
+        }
     }
+
+    
 }
