@@ -32,7 +32,7 @@ for (let pos in num){
 
 //Como buscar um valor dentro de um vetor
 
-//num.indexOf(valordesejado)
+//num.indexOf(valor desejado)
 
 //Quando o retorno for -1 é porque o valor não exite no vetor
 console.log(num)
