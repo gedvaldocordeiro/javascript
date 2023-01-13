@@ -4,7 +4,7 @@ function atualiza(){
     let d2 = window.document.querySelector('div#d2')
     if (txtentra.value.length == 0){
         window.alert('Preencha todos dados!')
-    } else if() {
+    } else{
         d2.innerHTML = `Valor ${entrada} adicionado.`
     }
 }
