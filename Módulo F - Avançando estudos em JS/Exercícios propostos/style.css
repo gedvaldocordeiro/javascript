@@ -49,6 +49,15 @@ main > section#corpo{
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
 }
 
+select#flista{
+    margin: 10px;
+    width: 250px;
+}
+
+select#flista{
+    padding: 4px;
+}
+
 footer{
     width: 100vw;
     height: 20vh;
