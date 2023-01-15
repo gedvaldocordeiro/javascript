@@ -3,6 +3,7 @@ let lista = document.querySelector('select#flista')
 let d2 = window.document.querySelector('div#d2')
 let valores = []
 
+//Teste para verificar se o valor enviado é um número
 function isNum(n){
     if(Number(n) >= 1 && Number(n) <= 100){
         return true
@@ -11,6 +12,7 @@ function isNum(n){
     }
 }
 
+//Teste para verificar se o valor enviado já está na lista
 function inLista(n, l){
     if (l.indexOf(Number(n)) != -1){
         return true
@@ -30,6 +32,7 @@ function atualiza(){
     } else{
         window.alert('O valor é invalido ou já se encontra na lista.')
     }
+    //Limpar o campo atualizar e dar foco nele
     num.value = ''
     num.focus()
 }
@@ -47,6 +50,7 @@ function finalizar(){
         let maior = valores[0]
         let soma = 0
         let media = 0
+        //Teste para somar os valores e definir o maior e o menor número
         for(let pos in valores){
             soma += valores[pos]
             if (valores[pos] > maior){
