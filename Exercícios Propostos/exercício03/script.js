@@ -11,6 +11,7 @@ function contar(){
         var vf = Number(fim.value)
         var vp = Number(passo.value)
 
+        //Caso o passo for 0
         if (vp <= 0){
             vp = 1
         }
@@ -20,6 +21,7 @@ function contar(){
             for(var cont = vi; cont <= vf; cont += vp){
                 d2.innerHTML += `${cont}, `
             }
+        //Inicio maior do que o fim
         }else{
             //Contagem decrescente
             for(var cont = vi; cont >= vf; cont -= vp){
